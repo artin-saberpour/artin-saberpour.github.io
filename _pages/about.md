@@ -56,6 +56,27 @@ A major focus of my research is **supernumerary robotic limbs and context-aware 
 </div>
 
 
+<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin:30px 0;">
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
+    <h3>Human–Robot Interaction</h3>
+    <p>Understanding how humans perceive robotic motion, intent, and behavior.</p>
+  </div>
+
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
+    <h3>Wearable Robotics</h3>
+    <p>Designing supernumerary robotic limbs that augment human capabilities.</p>
+  </div>
+
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
+    <h3>Generative Robotics</h3>
+    <p>Learning naturalistic robot motion using diffusion and transformer models.</p>
+  </div>
+
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
+    <h3>Multimodal Perception</h3>
+    <p>Modeling intent from scene, motion, and contextual signals.</p>
+  </div>
+</div>
 
 
 
