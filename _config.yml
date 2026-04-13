@@ -27,10 +27,10 @@ author:
   name             : "Artin Saberpour Abadian"
   pronouns         : # example: "she/her"  
   bio              : "Researcher in physical human-robot interaction."
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Saarbrücken, Germany"
+  employer         : "Saarland University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "saberpour@cs.uni-saarland.de" 
 
   # Academic websites
   academia         : # URL
