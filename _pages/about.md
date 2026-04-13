@@ -24,36 +24,31 @@ I study how humans perceive robot motion, intention, and behavior, and use these
 A major focus of my research is **supernumerary robotic limbs and context-aware human–robot handovers**, where generative models help robotic systems move in ways that align with human expectations and contextual cues.
 
 
-<div class="research-grid">
-  <div class="research-card">
-    <h3>Human–Robot Interaction</h3>
-    <p>
-      Understanding how humans perceive robotic motion, intent, and behavior
-      to design intuitive interactions.
-    </p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin:30px 0;">
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
+    <h3 style="margin-top:0; margin-bottom:10px;">Human–Robot Interaction</h3>
+    <p style="margin:0;">Understanding how humans perceive robotic motion, intent, and behavior to design intuitive interactions.</p>
   </div>
 
-  <div class="research-card">
-    <h3>Wearable Robotics</h3>
-    <p>
-      Designing supernumerary robotic limbs that augment human capabilities.
-    </p>
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
+    <h3 style="margin-top:0; margin-bottom:10px;">Wearable Robotics</h3>
+    <p style="margin:0;">Designing supernumerary robotic limbs that augment human capabilities.</p>
   </div>
 
-  <div class="research-card">
-    <h3>Generative Robotics</h3>
-    <p>
-      Learning naturalistic robot motion using diffusion and transformer models.
-    </p>
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
+    <h3 style="margin-top:0; margin-bottom:10px;">Generative Robotics</h3>
+    <p style="margin:0;">Learning naturalistic robot motion using diffusion and transformer models.</p>
   </div>
 
-  <div class="research-card">
-    <h3>Multimodal Perception</h3>
-    <p>
-      Modeling intent from scene, motion, and contextual signals.
-    </p>
+  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
+    <h3 style="margin-top:0; margin-bottom:10px;">Multimodal Perception</h3>
+    <p style="margin:0;">Modeling intent from scene, motion, and contextual signals.</p>
   </div>
 </div>
+
+
+
+
 
 
 <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin:30px 0;">
