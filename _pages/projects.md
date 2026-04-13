@@ -57,7 +57,7 @@ A selection of research systems, datasets, and interactive prototypes spanning w
 
 <tr>
 <td style="width:220px; vertical-align: top; border-style:none;">
-    <img src="/images/adaptive_handovers_thumbnail.png" width="200">
+    <img src="/images/vlm_thumbnail.png" width="200">
 </td>
 <td style="vertical-align: top; border-style:none;">
     <p>
@@ -70,7 +70,7 @@ A selection of research systems, datasets, and interactive prototypes spanning w
 
 <tr>
 <td style="width:220px; vertical-align: top; border-style:none;">
-    <img src="/images/moire_thumbnail.png" width="200">
+    <img src="/images/fabricationofmoireoncurvedsurfaces_thumbnail.jpg" width="200">
 </td>
 <td style="vertical-align: top; border-style:none;">
     <p>
