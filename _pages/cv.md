@@ -140,6 +140,21 @@ Service and leadership
 
 Supervision
 ======
-* Supervised Master's and Bachelor's theses
-* Mentored visiting interns
-* Guided student research projects in HRI and wearable robotics
+* Supervised Master’s theses in human–robot interaction, wearable robotics, and augmented reality, including:
+  * Moaz Bin Younus — *Neuroplastic Adaptation Through BCI Training with a Supernumerary Robotic Arm* (Saarland University, 2025)
+  * Alireza Parchami — *In-car Augmented Reality* (Saarland University, 2025)
+
+* Supervised Bachelor’s theses in embodied AI and reinforcement learning, including:
+  * Bilal Alshikh — *Developmental Insights into Three-Handed Functionality using Reinforcement Learning* (Saarland University, 2025)
+
+* Mentored visiting research interns and supported their research integration, including:
+  * Claire Chen — Visiting Intern from Massachusetts Institute of Technology (Saarland University, 2024)
+
+* Guided student research projects in human–robot interaction (HRI), wearable robotics, and embodied interaction, supporting:
+  * project scoping and research question formulation
+  * experimental design and user study planning
+  * hardware integration and robotic prototyping
+  * machine learning pipeline development
+  * data analysis, evaluation, and scientific writing
+
+* Supervised graduate seminar and course projects on wearable robotics and generative AI for interactive systems, mentoring student teams through ideation, implementation, and final presentation
