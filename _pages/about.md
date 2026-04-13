@@ -79,6 +79,10 @@ Research Themes
 
 {% include feature_row %}
 
+I work on human-centered robotic systems at the intersection of wearable robotics, embodied AI, and generative motion modeling.
+
+For a broader overview, see the [Projects](/portfolio/) and [Publications](/publications/) sections.
+
 
 
 About
