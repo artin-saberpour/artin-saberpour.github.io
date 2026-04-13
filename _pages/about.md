@@ -7,8 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-PhD Candidate — Human–Computer Interaction Lab
-======
+**PhD Candidate — Human–Computer Interaction Lab**
 Saarland University
 
 I develop robotic systems that interact with humans in ways that feel **natural, intuitive, and seamlessly embodied.**
