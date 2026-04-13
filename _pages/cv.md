@@ -11,6 +11,20 @@ redirect_from:
 
 [Download PDF CV](/files/Artin_Saberpour_CV.pdf){: .btn .btn--primary}
 
+Research Interests
+======
+I study how robotic systems can behave in ways that feel intuitive and natural to humans, with a focus on understanding the behavioral and contextual cues that shape human perception of robot motion, and using these insights to design more seamless and ergonomic interactions.
+
+* Human–Robot Interaction (HRI)
+* Wearable Robotics
+* Supernumerary Robotic Limbs
+* Embodied AI
+* Generative Models for Robotics
+* Multimodal Perception
+* Human Motion Modeling
+* Scene Understanding
+
+
 Education
 ======
 * Ph.D. Candidate in Computer Science, HCI Lab, Saarland University, Saarbrücken, Germany (Jan 2021 – Present)
