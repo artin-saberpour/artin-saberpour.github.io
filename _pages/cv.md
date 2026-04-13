@@ -110,7 +110,7 @@ Skills
 
 Publications
 ======
-* Context-Aware Adaptive Handovers with Supernumerary Robotic Limbs using VLMs (Under submission, IEEE RA-L)
+* Context-Aware Adaptive Handovers using foundation models (Under review)
 * GestureCoach: Rehearsing for Engaging Talks with LLM Driven Gesture Recommendations (UIST 2025)
 * 3HANDS Dataset: Learning from Humans for Generating Naturalistic Handovers with Supernumerary Robotic Limbs (CHI 2025)
 * WRLKit: Computational Design of Personalized Wearable Robotic Limbs (UIST 2023)
