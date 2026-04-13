@@ -16,9 +16,12 @@ author_profile: true
 <td style="vertical-align: top; border-style:none;">
     <p>
         <strong>Fabrication of Moiré on Curved Surfaces</strong><br>
-        <u>Artin Saberpour Abadian</u>, Vahid Babaei, Roger D. Hersch, Rhaleb Zayer, Hans-Peter Seidel<br>
-        <i>US Patent</i><br>
-        Publication No.: US 2022/0355609 A1<br>
+        <strong><ins>Artin Saberpour Abadian</ins></strong>, Vahid Babaei,
+        Roger D. Hersch, Jiajing Fang, Rhaleb Zayer,
+        Hans-Peter Seidel<br>
+        <i>United States Patent</i><br>
+        Patent No.: US 12,128,701 B2<br>
+        Granted: October 29, 2024<br>
         <a href="https://patents.google.com/patent/US12128701B2/en">[Patent]</a>
     </p>
 </td>
