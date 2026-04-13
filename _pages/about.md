@@ -20,7 +20,7 @@ feature_row:
     btn_label: "See project"
     btn_class: "btn--primary"
 
-  - image_path: /images/wrlkit_thumbnail.png
+  - image_path: /vlm_thumbnail.png
     alt: "Adaptive robotic handovers"
     title: "Adaptive Handovers with VLMs"
     excerpt: "Context-aware robotic handovers using scene understanding and vision-language models."
