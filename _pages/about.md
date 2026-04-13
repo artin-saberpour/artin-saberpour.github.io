@@ -4,7 +4,7 @@ title: "Artin Saberpour Abadian"
 author_profile: true
 
 feature_row:
-  - image_path: /images/3hands_thumbnail.png
+  - image_path: 3hands_thumbnail.png
     alt: "3HANDS dataset"
     title: "3HANDS Dataset"
     excerpt: "A multimodal dataset for learning naturalistic handovers with supernumerary robotic limbs."
@@ -12,7 +12,7 @@ feature_row:
     btn_label: "Related publication"
     btn_class: "btn--primary"
 
-  - image_path: /images/wrlkit_thumbnail.png
+  - image_path: /wrlkit_thumbnail.png
     alt: "WRLKit wearable robotics"
     title: "WRLKit"
     excerpt: "A computational design framework for personalized wearable robotic limbs."
