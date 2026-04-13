@@ -2,9 +2,31 @@
 permalink: /
 title: "Artin Saberpour Abadian"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+
+feature_row:
+  - image_path: /images/3hands.jpg
+    alt: "3HANDS dataset"
+    title: "3HANDS Dataset"
+    excerpt: "A multimodal dataset for learning naturalistic handovers with supernumerary robotic limbs."
+    url: /publications/
+    btn_label: "Related publication"
+    btn_class: "btn--primary"
+
+  - image_path: /images/wrlkit.jpg
+    alt: "WRLKit wearable robotics"
+    title: "WRLKit"
+    excerpt: "A computational design framework for personalized wearable robotic limbs."
+    url: /portfolio/
+    btn_label: "See project"
+    btn_class: "btn--primary"
+
+  - image_path: /images/adaptive-handovers.jpg
+    alt: "Adaptive robotic handovers"
+    title: "Adaptive Handovers with VLMs"
+    excerpt: "Context-aware robotic handovers using scene understanding and vision-language models."
+    url: /publications/
+    btn_label: "Read more"
+    btn_class: "btn--primary"
 ---
 
 **PhD Candidate — Human–Computer Interaction Lab**
@@ -53,8 +75,9 @@ Research Themes
 
 
 
-Selected Research Highlights
-======
+## Selected Research Highlights
+
+{% include feature_row %}
 
 
 
