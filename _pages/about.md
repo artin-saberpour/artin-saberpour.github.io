@@ -36,8 +36,8 @@ I develop robotic systems that interact with humans in ways that feel **natural,
 
 My research lies at the intersection of **Human–Robot Interaction, wearable robotics, generative motion models, and embodied AI**, with a focus on enabling fluid collaboration between humans and robotic systems.
 
-Research Vision
-======
+## Research Vision
+
 
 My work explores how robotic systems can become intuitive collaborators and extensions of the human body.
 
@@ -46,8 +46,8 @@ I study how humans perceive robot motion, intention, and behavior, and use these
 A major focus of my research is **supernumerary robotic limbs and context-aware human–robot handovers**, where generative models help robotic systems move in ways that align with human expectations and contextual cues.
 
 
-Research Themes
-======
+## Research Themes
+
 
 <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin:30px 0;">
   <a href="/projects/" style="text-decoration:none; color:inherit;">
@@ -85,8 +85,8 @@ For a broader overview, see the [Projects](/portfolio/) and [Publications](/publ
 
 
 
-About
-======
+## About
+
 
 I am currently a PhD candidate at Saarland University’s HCI Lab, working on wearable robotics and embodied AI.
 
