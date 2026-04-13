@@ -24,30 +24,6 @@ I study how humans perceive robot motion, intention, and behavior, and use these
 A major focus of my research is **supernumerary robotic limbs and context-aware human–robot handovers**, where generative models help robotic systems move in ways that align with human expectations and contextual cues.
 
 
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin:30px 0;">
-  <a href="/projects/" style="text-decoration:none; color:inherit;">
-    <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
-      <h3 style="margin-top:0; margin-bottom:10px;">Human–Robot Interaction</h3>
-      <p style="margin:0;">Understanding how humans perceive robotic motion, intent, and behavior to design intuitive interactions.</p>
-    </div>
-  </a>
-
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
-    <h3 style="margin-top:0; margin-bottom:10px;">Wearable Robotics</h3>
-    <p style="margin:0;">Designing supernumerary robotic limbs that augment human capabilities.</p>
-  </div>
-
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
-    <h3 style="margin-top:0; margin-bottom:10px;">Generative Robotics</h3>
-    <p style="margin:0;">Learning naturalistic robot motion using diffusion and transformer models.</p>
-  </div>
-
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
-    <h3 style="margin-top:0; margin-bottom:10px;">Multimodal Perception</h3>
-    <p style="margin:0;">Modeling intent from scene, motion, and contextual signals.</p>
-  </div>
-</div>
-
 
 
 
