@@ -25,10 +25,12 @@ A major focus of my research is **supernumerary robotic limbs and context-aware 
 
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin:30px 0;">
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
-    <h3 style="margin-top:0; margin-bottom:10px;">Human–Robot Interaction</h3>
-    <p style="margin:0;">Understanding how humans perceive robotic motion, intent, and behavior to design intuitive interactions.</p>
-  </div>
+  <a href="/projects/" style="text-decoration:none; color:inherit;">
+    <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
+      <h3 style="margin-top:0; margin-bottom:10px;">Human–Robot Interaction</h3>
+      <p style="margin:0;">Understanding how humans perceive robotic motion, intent, and behavior to design intuitive interactions.</p>
+    </div>
+  </a>
 
   <div style="padding:20px; border:1px solid #ddd; border-radius:12px; background:#fff;">
     <h3 style="margin-top:0; margin-bottom:10px;">Wearable Robotics</h3>
@@ -51,6 +53,8 @@ A major focus of my research is **supernumerary robotic limbs and context-aware 
 
 
 
+
+/*
 <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin:30px 0;">
   <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
     <h3>Human–Robot Interaction</h3>
@@ -72,7 +76,7 @@ A major focus of my research is **supernumerary robotic limbs and context-aware 
     <p>Modeling intent from scene, motion, and contextual signals.</p>
   </div>
 </div>
-
+*/
 
 
 
