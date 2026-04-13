@@ -24,8 +24,6 @@ I study how humans perceive robot motion, intention, and behavior, and use these
 A major focus of my research is **supernumerary robotic limbs and context-aware human–robot handovers**, where generative models help robotic systems move in ways that align with human expectations and contextual cues.
 
 
-
-```html
 <div class="research-grid">
   <div class="research-card">
     <h3>Human–Robot Interaction</h3>
@@ -56,7 +54,6 @@ A major focus of my research is **supernumerary robotic limbs and context-aware 
     </p>
   </div>
 </div>
-```
 
 
 
