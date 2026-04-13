@@ -24,7 +24,12 @@ I study how humans perceive robot motion, intention, and behavior, and use these
 A major focus of my research is **supernumerary robotic limbs and context-aware human–robot handovers**, where generative models help robotic systems move in ways that align with human expectations and contextual cues.
 
 
+About
+======
 
+I am currently a PhD candidate at Saarland University’s HCI Lab, working on wearable robotics and embodied AI.
+
+I am particularly interested in building robotic systems that augment human capability while remaining intuitive, ergonomic, and socially understandable.
 
 
 
