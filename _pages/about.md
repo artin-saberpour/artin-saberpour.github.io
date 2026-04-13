@@ -23,7 +23,7 @@ feature_row:
   - image_path: /vlm_thumbnail.png
     alt: "Adaptive robotic handovers"
     title: "Adaptive Handovers with VLMs"
-    excerpt: "Context-aware robotic handovers using scene understanding and vision-language models."
+    excerpt: "Context-aware robotic handovers using scene understanding and foundation models."
     url: /publications/
     btn_label: "Read more"
     btn_class: "btn--primary"
