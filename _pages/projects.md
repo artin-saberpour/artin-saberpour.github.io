@@ -68,6 +68,23 @@ A selection of research systems, datasets, and interactive prototypes spanning w
 </td>
 </tr>
 
+
+
+<tr>
+<td style="width:220px; vertical-align: top; border-style:none;">
+    <img src="/images/kinova_simulation.png" width="200">
+</td>
+<td style="vertical-align: top; border-style:none;">
+    <p>
+        <strong>Kinova Unity ROS2 CLIK 6D Controller</strong><br>
+        This project provides a simulation framework for workspace control of a Kinova robotic arm using a Closed-Loop Inverse Kinematics (CLIK) controller.<br>
+        <a href="https://github.com/artin-saberpour/Kinova-unity-ros2-clik-6d-controller">[Project]</a>
+    </p>
+</td>
+</tr>
+
+
+
 <tr>
 <td style="width:220px; vertical-align: top; border-style:none;">
     <img src="/images/fabricationofmoireoncurvedsurfaces_thumbnail.jpg" width="200">
