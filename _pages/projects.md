@@ -72,6 +72,21 @@ A selection of research systems, datasets, and interactive prototypes spanning w
 
 <tr>
 <td style="width:220px; vertical-align: top; border-style:none;">
+    <img src="/images/fabricationofmoireoncurvedsurfaces_thumbnail.jpg" width="200">
+</td>
+<td style="vertical-align: top; border-style:none;">
+    <p>
+        <strong>Fabrication of Moiré on Curved Surfaces</strong><br>
+        A fabrication-aware computational pipeline for programmable surface patterning and perception-driven design.<br>
+        <a href="/publications/">[Paper]</a>
+        <a href="#">[Patent]</a>
+    </p>
+</td>
+</tr>
+
+
+<tr>
+<td style="width:220px; vertical-align: top; border-style:none;">
     <img src="/images/kinova_simulation.png" width="200">
 </td>
 <td style="vertical-align: top; border-style:none;">
@@ -85,19 +100,7 @@ A selection of research systems, datasets, and interactive prototypes spanning w
 
 
 
-<tr>
-<td style="width:220px; vertical-align: top; border-style:none;">
-    <img src="/images/fabricationofmoireoncurvedsurfaces_thumbnail.jpg" width="200">
-</td>
-<td style="vertical-align: top; border-style:none;">
-    <p>
-        <strong>Fabrication of Moiré on Curved Surfaces</strong><br>
-        A fabrication-aware computational pipeline for programmable surface patterning and perception-driven design.<br>
-        <a href="/publications/">[Paper]</a>
-        <a href="#">[Patent]</a>
-    </p>
-</td>
-</tr>
+
 
 </tbody>
 </table>
