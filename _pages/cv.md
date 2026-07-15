@@ -29,7 +29,7 @@ Education
 ======
 * Ph.D. Candidate in Computer Science, HCI Lab, Saarland University, Saarbrücken, Germany (Jan 2021 – Present)
 * M.Sc. in Computer Science, Saarland University, Saarbrücken, Germany (Apr 2017 – Dec 2020)
-  * GPA: 1.8 (German grading system)
+  * GPA: 1.7 (German grading system)
 * B.Sc. in Computer Hardware Engineering, University of Tehran, Tehran, Iran (2008 – 2013)
   * Last 5 semesters GPA: 16.09/20.0
 
