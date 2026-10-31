@@ -5,7 +5,20 @@ permalink: /projects/
 author_profile: true
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/research-projects.css' | relative_url }}">
+<style>
+.projects-page { max-width: 100%; }
+.projects-page .project-catalog { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 22px !important; margin: 22px 0 44px !important; }
+.projects-page .project-tile { display: block !important; min-width: 0; overflow: hidden; border-radius: 10px; border: 1px solid #d9e2e8; background: transparent; text-decoration: none !important; color: inherit !important; box-shadow: 0 2px 8px rgba(17,35,49,.05); }
+.projects-page .project-tile:hover { box-shadow: 0 9px 22px rgba(17,35,49,.14); }
+.projects-page .project-tile img { display: block !important; width: 100% !important; height: 205px !important; object-fit: cover !important; border-radius: 0; margin: 0; }
+.projects-page .project-tile .tile-body { padding: 16px 18px 19px !important; }
+.projects-page .project-tile h3 { margin: 0 0 9px; font-size: 1.08rem; line-height: 1.35; }
+.projects-page .project-tile p { margin: 0; color: #596b76; font-size: .86rem; line-height: 1.5; }
+.projects-page .research-meta { margin-top: 11px; font-size: .74rem; font-weight: 600; letter-spacing: .025em; color: #486e81; }
+@media(max-width:680px) { .projects-page .project-catalog { grid-template-columns: 1fr !important; } .projects-page .project-tile img { height: 205px !important; } }
+@media(prefers-color-scheme:dark) { .projects-page .project-tile p { color: #b5c1c9; } .projects-page .project-tile { border-color: #4f616b; } .projects-page .research-meta { color: #9cc5d4; } }
+</style>
+<div class="projects-page">
 
 ## Research Projects
 
@@ -72,7 +85,7 @@ author_profile: true
 <div class="project-catalog">
 
   <a class="project-tile" href="{{ '/projects/mini-ctorch/' | relative_url }}">
-    <img src="{{ 'https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/main/py/training_progress.gif' | relative_url }}" alt="Mini_CTorch thumbnail">
+    <img src="https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/master/py/training_progress.gif" alt="Mini_CTorch thumbnail">
     <div class="tile-body">
       <h3>Mini_CTorch</h3>
       <p>Custom CUDA kernels, matrix multiplication, automatic differentiation, and neural network training.</p>
@@ -81,12 +94,14 @@ author_profile: true
   </a>
 
   <a class="project-tile" href="{{ '/projects/srl-impedance-control/' | relative_url }}">
-    <img src="{{ '/images/kinova_simulation.png' | relative_url }}" alt="SRL Impedance Control thumbnail">
+    <img src="{{ '/images/kinova_simulation.png' | relative_url }}" alt="SRL Impedance Control simulation thumbnail">
     <div class="tile-body">
       <h3>SRL Impedance Control</h3>
       <p>6-DoF MuJoCo simulation and impedance control for a supernumerary robotic limb.</p>
       <div class="research-meta">Control · Simulation</div>
     </div>
   </a>
+
+</div>
 
 </div>
