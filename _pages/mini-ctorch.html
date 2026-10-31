@@ -1,0 +1,10 @@
+---
+layout: single
+permalink: /projects/mini-ctorch/
+title: "Mini_CTorch"
+author_profile: true
+---
+<link rel="stylesheet" href="{{ '/assets/css/research-projects.css' | relative_url }}">
+<article class="research-showcase"><p class="eyebrow">Engineering project · CUDA · C</p><h1>Mini_CTorch</h1><p class="lead">From-scratch tensor operations, CUDA matrix multiplication kernels, automatic differentiation and neural-network training.</p><p class="meta">C · CUDA · GPU kernels · Autograd</p><div class="actions"><a class="action primary" href="https://github.com/artin-saberpour/Mini_CTorch" target="_blank" rel="noopener">Source repository</a></div><h2>Implementation</h2>
+<p>Implements CPU and CUDA tensor primitives, a graph-based backward pass, fully connected layers, a mean squared error loss and CUDA SGD updates. The matrix multiplication CUDA implementation uses a 16 × 16 thread-block mapping with dedicated backward kernels.</p><div class="stages"><div class="stage">Tensor operations</div><div class="stage">CUDA kernels</div><div class="stage">Autograd</div><div class="stage">Model training</div></div><h2>Example experiment</h2>
+<p>A configurable 1 → 8 → 8 → 1 network with tanh activations learns a sampled sine function with mean squared error and stochastic gradient descent.</p><figure><img src="https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/main/py/training_progress.gif" alt="Mini_CTorch sine-function training animation" loading="lazy"><figcaption>Training progress, from the original repository.</figcaption></figure><p class="meta"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p></article>
