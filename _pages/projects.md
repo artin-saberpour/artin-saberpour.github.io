@@ -9,17 +9,35 @@ author_profile: true
 .project-catalog { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 22px !important; margin: 22px 0 44px !important; }
 .project-tile { display: block !important; min-width: 0; overflow: hidden; border-radius: 10px; border: 1px solid #d9e2e8; background: transparent; text-decoration: none !important; color: inherit !important; box-shadow: 0 2px 8px rgba(17,35,49,.05); }
 .project-tile:hover { box-shadow: 0 9px 22px rgba(17,35,49,.14); }
-.project-tile img { display: block !important; width: 100% !important; height: 205px !important; object-fit: cover !important; border-radius: 0; margin: 0; }
+.project-tile img, .project-tile video { display: block !important; width: 100% !important; height: 205px !important; object-fit: cover !important; border-radius: 0; margin: 0; }
 .project-tile .tile-body { padding: 16px 18px 19px !important; }
 .project-tile h3 { margin: 0 0 9px; font-size: 1.08rem; line-height: 1.35; }
 .project-tile p { margin: 0; color: #596b76; font-size: .86rem; line-height: 1.5; }
 .project-tile .research-meta { margin-top: 11px; font-size: .74rem; font-weight: 600; letter-spacing: .025em; color: #486e81; }
-@media(max-width:680px) { .project-catalog { grid-template-columns: 1fr !important; } .project-tile img { height: 205px !important; } }
+@media(max-width:680px) { .project-catalog { grid-template-columns: 1fr !important; } .project-tile img, .project-tile video { height: 205px !important; } }
 @media(prefers-color-scheme:dark) { .project-tile p { color: #b5c1c9; } .project-tile { border-color: #4f616b; } .project-tile .research-meta { color: #9cc5d4; } }
 </style>
 ## Research Projects
 
 <div class="project-catalog">
+
+  <a class="project-tile" href="{{ '/projects/speak-to-the-city/' | relative_url }}">
+    <img src="{{ '/images/speak-to-the-city-thumbnail.png' | relative_url }}" alt="Speak to the City thumbnail">
+    <div class="tile-body">
+      <h3>Speak to the City</h3>
+      <p>Multimodal resolution of outside-the-vehicle references in dynamic automotive environments.</p>
+      <div class="research-meta">AutomotiveUI 2026 · Best Paper</div>
+    </div>
+  </a>
+
+  <a class="project-tile" href="{{ '/projects/gesturecoach/' | relative_url }}">
+    <img src="{{ '/images/gesturecoach_thumbnail.png' | relative_url }}" alt="GestureCoach thumbnail">
+    <div class="tile-body">
+      <h3>GestureCoach</h3>
+      <p>LLM-driven gesture recommendations for presentation rehearsal.</p>
+      <div class="research-meta">UIST 2025</div>
+    </div>
+  </a>
 
   <a class="project-tile" href="{{ '/projects/3hands/' | relative_url }}">
     <img src="{{ '/images/3hands_thumbnail.png' | relative_url }}" alt="3HANDS thumbnail">
@@ -48,24 +66,6 @@ author_profile: true
     </div>
   </a>
 
-  <a class="project-tile" href="{{ '/projects/speak-to-the-city/' | relative_url }}">
-    <img src="{{ '/images/speak-to-the-city-thumbnail.png' | relative_url }}" alt="Speak to the City thumbnail">
-    <div class="tile-body">
-      <h3>Speak to the City</h3>
-      <p>Multimodal resolution of outside-the-vehicle references in dynamic automotive environments.</p>
-      <div class="research-meta">AutomotiveUI 2026 · Best Paper</div>
-    </div>
-  </a>
-
-  <a class="project-tile" href="{{ '/projects/gesturecoach/' | relative_url }}">
-    <img src="{{ '/images/gesturecoach_thumbnail.png' | relative_url }}" alt="GestureCoach thumbnail">
-    <div class="tile-body">
-      <h3>GestureCoach</h3>
-      <p>LLM-driven gesture recommendations for presentation rehearsal.</p>
-      <div class="research-meta">UIST 2025</div>
-    </div>
-  </a>
-
   <a class="project-tile" href="{{ '/projects/moire-curved-surfaces/' | relative_url }}">
     <img src="{{ '/images/fabricationofmoireoncurvedsurfaces_thumbnail.jpg' | relative_url }}" alt="Fabrication of Moiré on Curved Surfaces thumbnail">
     <div class="tile-body">
@@ -74,6 +74,7 @@ author_profile: true
       <div class="research-meta">Optics Express 2020</div>
     </div>
   </a>
+
 
 </div>
 
@@ -101,7 +102,7 @@ author_profile: true
 
 
   <a class="project-tile" href="https://github.com/artin-saberpour/Kinova-unity-ros2-clik-6d-controller">
-    <img src="{{ '/images/kinova_simulation.png' | relative_url }}" alt="Kinova Unity ROS2 closed-loop inverse kinematics controller">
+    <video autoplay muted loop playsinline preload="metadata" poster="{{ '/images/kinova_simulation.png' | relative_url }}" aria-label="Kinova Unity ROS2 closed-loop inverse kinematics controller demonstration"><source src="https://raw.githubusercontent.com/artin-saberpour/Kinova-unity-ros2-clik-6d-controller/main/rendered_samples/rendered_sample.mp4" type="video/mp4"></video>
     <div class="tile-body">
       <h3>Kinova Unity–ROS2 CLIK Controller</h3>
       <p>Six-dimensional task-space closed-loop inverse kinematics with ROS2 and Unity.</p>
