@@ -91,7 +91,7 @@ author_profile: true
   </a>
 
   <a class="project-tile" href="{{ '/projects/srl-impedance-control/' | relative_url }}">
-    <img src="{{ '/images/kinova_simulation.png' | relative_url }}" alt="SRL Impedance Control simulation thumbnail">
+    <img src="https://github.com/user-attachments/assets/c2939f0f-b13e-4a47-9758-30ae4f98ccca" alt="SRL impedance controller MuJoCo demonstration">
     <div class="tile-body">
       <h3>SRL Impedance Control</h3>
       <p>6-DoF MuJoCo simulation and impedance control for a supernumerary robotic limb.</p>
@@ -99,5 +99,14 @@ author_profile: true
     </div>
   </a>
 
+
+  <a class="project-tile" href="https://github.com/artin-saberpour/Kinova-unity-ros2-clik-6d-controller">
+    <img src="{{ '/images/kinova_simulation.png' | relative_url }}" alt="Kinova Unity ROS2 closed-loop inverse kinematics controller">
+    <div class="tile-body">
+      <h3>Kinova Unity–ROS2 CLIK Controller</h3>
+      <p>Six-dimensional task-space closed-loop inverse kinematics with ROS2 and Unity.</p>
+      <div class="research-meta">ROS2 · Unity · Kinematics</div>
+    </div>
+  </a>
 </div>
 
