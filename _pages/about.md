@@ -2,96 +2,66 @@
 permalink: /
 title: "Artin Saberpour Abadian"
 author_profile: true
-
-feature_row:
-  - image_path: 3hands_thumbnail.png
-    alt: "3HANDS dataset"
-    title: "3HANDS Dataset"
-    excerpt: "A multimodal dataset for learning naturalistic handovers with supernumerary robotic limbs."
-    url: /publications/
-    btn_label: "Related publication"
-    btn_class: "btn--primary"
-
-  - image_path: /wrlkit_thumbnail.png
-    alt: "WRLKit wearable robotics"
-    title: "WRLKit"
-    excerpt: "A computational design framework for personalized wearable robotic limbs."
-    url: /portfolio/
-    btn_label: "See project"
-    btn_class: "btn--primary"
-
-  - image_path: /vlm_thumbnail.png
-    alt: "Adaptive robotic handovers"
-    title: "Adaptive context aware Handovers with foundation models"
-    excerpt: "Context-aware robotic handovers using scene understanding and foundation models."
-    url: /publications/
-    btn_label: "Read more"
-    btn_class: "btn--primary"
 ---
 
-**PhD Candidate — Human–Computer Interaction Lab**
-Saarland University
+<style>
+.home-focus{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0 32px}
+.home-focus>div{border:1px solid #dce3e7;border-radius:10px;padding:18px}
+.home-focus h3{font-size:1.05rem;margin:0 0 8px}.home-focus p{font-size:.9rem;line-height:1.55;margin:0}
+.home-selected{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 28px}
+.home-selected a{display:block;color:inherit!important;text-decoration:none!important;border:1px solid #dce3e7;border-radius:10px;overflow:hidden;min-width:0}
+.home-selected img{width:100%;height:140px;object-fit:cover;display:block}.home-selected .caption{padding:14px}
+.home-selected strong{display:block;font-size:.93rem}.home-selected span{display:block;margin-top:7px;font-size:.8rem;line-height:1.4}
+@media(max-width:700px){.home-focus,.home-selected{grid-template-columns:1fr}.home-selected img{height:200px}}
+</style>
 
-I develop robotic systems that interact with humans in ways that feel **natural, intuitive, and seamlessly embodied.**
+**PhD Researcher · Applied AI, Multimodal Intelligence & Embodied Systems**  
+Human–Computer Interaction Lab, Saarland University
 
-My research lies at the intersection of **Human–Robot Interaction, wearable robotics, generative motion models, and embodied AI**, with a focus on enabling fluid collaboration between humans and robotic systems.
+I research and engineer **AI systems that connect perception, language, decision-making, and physical interaction**. My work spans multimodal machine learning, human-centered AI, and embodied intelligence, with a focus on reliable performance in dynamic real-world environments.
 
-## Research Vision
+I work across the full pipeline, from dataset design and model architectures to inference engineering, robot control, interactive systems, and quantitative evaluation.
 
+## Research Focus
 
-My work explores how robotic systems can become intuitive collaborators and extensions of the human body.
-
-I study how humans perceive robot motion, intention, and behavior, and use these insights to design systems that support more natural interaction in shared tasks.
-
-A major focus of my research is **supernumerary robotic limbs and context-aware human–robot handovers**, where generative models help robotic systems move in ways that align with human expectations and contextual cues.
-
-
-## Research Themes
-
-
-<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin:30px 0;">
-  <a href="/projects/" style="text-decoration:none; color:inherit;">
-    <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
-      <h3>Human–Robot Interaction</h3>
-      <p>Understanding how humans perceive robotic motion, intent, and behavior.</p>
-    </div>
-  </a>
-
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
-    <h3>Wearable Robotics</h3>
-    <p>Designing supernumerary robotic limbs that augment human capabilities.</p>
+<div class="home-focus">
+  <div>
+    <h3>Multimodal AI & Spatial Understanding</h3>
+    <p>Integrating language, visual context, geometry, and temporal information to interpret intent and identify relevant targets in complex scenes.</p>
   </div>
-
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
-    <h3>Generative Robotics</h3>
-    <p>Learning naturalistic robot motion using diffusion and transformer models.</p>
+  <div>
+    <h3>Embodied AI & Robot Interaction</h3>
+    <p>Data-driven generation of naturalistic robot behavior, context-aware handovers, and supernumerary robotic limbs.</p>
   </div>
-
-  <div style="padding:20px; border:1px solid #ddd; border-radius:12px;">
-    <h3>Multimodal Perception</h3>
-    <p>Modeling intent from scene, motion, and contextual signals.</p>
+  <div>
+    <h3>Human-Centered AI Systems</h3>
+    <p>Building interactive AI systems and evaluating their behavior, usability, and robustness with people.</p>
+  </div>
+  <div>
+    <h3>ML & Robotics Engineering</h3>
+    <p>Developing model pipelines, GPU computation, ROS 2 integrations, task-space controllers, and real-time implementations.</p>
   </div>
 </div>
 
+## Selected Research
 
+<div class="home-selected">
+  <a href="/projects/speak-to-the-city/">
+    <img src="/images/speak-to-the-city-thumbnail.png" alt="Speak to the City original-paper thumbnail">
+    <div class="caption"><strong>Speak to the City</strong><span>Multimodal gaze–language inference in moving vehicles · AutomotiveUI 2026 Best Paper</span></div>
+  </a>
+  <a href="/projects/3hands/">
+    <img src="/images/3hands_thumbnail.png" alt="3HANDS thumbnail">
+    <div class="caption"><strong>3HANDS</strong><span>Human demonstrations and naturalistic robotic handovers · CHI 2025</span></div>
+  </a>
+  <a href="/projects/gesturecoach/">
+    <img src="/images/gesturecoach_thumbnail.png" alt="GestureCoach thumbnail">
+    <div class="caption"><strong>GestureCoach</strong><span>Interactive LLM-supported presentation rehearsal · UIST 2025</span></div>
+  </a>
+</div>
 
-## Selected Research Highlights
-
-{% include feature_row %}
-
-I work on human-centered robotic systems at the intersection of wearable robotics, embodied AI, and generative motion modeling.
-
-For a broader overview, see the [Projects](/portfolio/) and [Publications](/publications/) sections.
-
-
+Explore my [Projects](/projects/) and [Publications](/publications/) for research and engineering work.
 
 ## About
 
-
-I am currently a PhD candidate at Saarland University’s HCI Lab, working on wearable robotics and embodied AI.
-
-I am particularly interested in building robotic systems that augment human capability while remaining intuitive, ergonomic, and socially understandable.
-
-
-
-
+I am completing my PhD at Saarland University, working at the intersection of applied machine learning, spatial reasoning, robotic interaction, and human-centered systems. My research connects technical AI methods with complete implementations and experimental validation.
