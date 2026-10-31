@@ -30,7 +30,7 @@ author_profile: true
   </a>
 
   <a class="research-card" href="{{ '/projects/i-need-a-third-arm/' | relative_url }}">
-    <img src="{{ '/images/3rdarm_thumbnail.png' | relative_url }}" alt="I Need a Third Arm thumbnail">
+    <img src="{{ '/images/ineedathirdarm_thumbnail.png' | relative_url }}" alt="I Need a Third Arm thumbnail">
     <div class="research-card-body">
       <h3>I Need a Third Arm!</h3>
       <p>The impact of supernumerary robotic limbs on human embodiment and behavior.</p>
@@ -57,7 +57,7 @@ author_profile: true
   </a>
 
   <a class="research-card" href="{{ '/projects/moire-curved-surfaces/' | relative_url }}">
-    <img src="{{ '/images/moire_thumbnail.png' | relative_url }}" alt="Fabrication of Moiré on Curved Surfaces thumbnail">
+    <img src="{{ '/images/fabricationofmoireoncurvedsurfaces_thumbnail.jpg' | relative_url }}" alt="Fabrication of Moiré on Curved Surfaces thumbnail">
     <div class="research-card-body">
       <h3>Fabrication of Moiré on Curved Surfaces</h3>
       <p>Computational optics, simulation, and fabrication of moiré on curved surfaces.</p>
@@ -72,7 +72,7 @@ author_profile: true
 <div class="research-project-grid">
 
   <a class="research-card" href="{{ '/projects/mini-ctorch/' | relative_url }}">
-    <img src="{{ '/images/mini_ctorch_thumbnail.png' | relative_url }}" alt="Mini_CTorch thumbnail">
+    <img src="{{ 'https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/main/py/training_progress.gif' | relative_url }}" alt="Mini_CTorch thumbnail">
     <div class="research-card-body">
       <h3>Mini_CTorch</h3>
       <p>Custom CUDA kernels, matrix multiplication, automatic differentiation, and neural network training.</p>
@@ -81,7 +81,7 @@ author_profile: true
   </a>
 
   <a class="research-card" href="{{ '/projects/srl-impedance-control/' | relative_url }}">
-    <img src="{{ '/images/srl_impedance_thumbnail.png' | relative_url }}" alt="SRL Impedance Control thumbnail">
+    <img src="{{ '/images/kinova_simulation.png' | relative_url }}" alt="SRL Impedance Control thumbnail">
     <div class="research-card-body">
       <h3>SRL Impedance Control</h3>
       <p>6-DoF MuJoCo simulation and impedance control for a supernumerary robotic limb.</p>
