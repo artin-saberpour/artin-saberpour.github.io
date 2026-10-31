@@ -85,7 +85,7 @@ author_profile: true
 <div class="project-catalog">
 
   <a class="project-tile" href="{{ '/projects/mini-ctorch/' | relative_url }}">
-    <img src="https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/master/py/training_progress.gif" alt="Mini_CTorch thumbnail">
+    <img src="https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/main/py/training_progress.gif" alt="Mini_CTorch thumbnail">
     <div class="tile-body">
       <h3>Mini_CTorch</h3>
       <p>Custom CUDA kernels, matrix multiplication, automatic differentiation, and neural network training.</p>
