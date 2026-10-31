@@ -6,20 +6,17 @@ author_profile: true
 ---
 
 <style>
-.projects-page { max-width: 100%; }
-.projects-page .project-catalog { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 22px !important; margin: 22px 0 44px !important; }
-.projects-page .project-tile { display: block !important; min-width: 0; overflow: hidden; border-radius: 10px; border: 1px solid #d9e2e8; background: transparent; text-decoration: none !important; color: inherit !important; box-shadow: 0 2px 8px rgba(17,35,49,.05); }
-.projects-page .project-tile:hover { box-shadow: 0 9px 22px rgba(17,35,49,.14); }
-.projects-page .project-tile img { display: block !important; width: 100% !important; height: 205px !important; object-fit: cover !important; border-radius: 0; margin: 0; }
-.projects-page .project-tile .tile-body { padding: 16px 18px 19px !important; }
-.projects-page .project-tile h3 { margin: 0 0 9px; font-size: 1.08rem; line-height: 1.35; }
-.projects-page .project-tile p { margin: 0; color: #596b76; font-size: .86rem; line-height: 1.5; }
-.projects-page .research-meta { margin-top: 11px; font-size: .74rem; font-weight: 600; letter-spacing: .025em; color: #486e81; }
-@media(max-width:680px) { .projects-page .project-catalog { grid-template-columns: 1fr !important; } .projects-page .project-tile img { height: 205px !important; } }
-@media(prefers-color-scheme:dark) { .projects-page .project-tile p { color: #b5c1c9; } .projects-page .project-tile { border-color: #4f616b; } .projects-page .research-meta { color: #9cc5d4; } }
+.project-catalog { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 22px !important; margin: 22px 0 44px !important; }
+.project-tile { display: block !important; min-width: 0; overflow: hidden; border-radius: 10px; border: 1px solid #d9e2e8; background: transparent; text-decoration: none !important; color: inherit !important; box-shadow: 0 2px 8px rgba(17,35,49,.05); }
+.project-tile:hover { box-shadow: 0 9px 22px rgba(17,35,49,.14); }
+.project-tile img { display: block !important; width: 100% !important; height: 205px !important; object-fit: cover !important; border-radius: 0; margin: 0; }
+.project-tile .tile-body { padding: 16px 18px 19px !important; }
+.project-tile h3 { margin: 0 0 9px; font-size: 1.08rem; line-height: 1.35; }
+.project-tile p { margin: 0; color: #596b76; font-size: .86rem; line-height: 1.5; }
+.project-tile .research-meta { margin-top: 11px; font-size: .74rem; font-weight: 600; letter-spacing: .025em; color: #486e81; }
+@media(max-width:680px) { .project-catalog { grid-template-columns: 1fr !important; } .project-tile img { height: 205px !important; } }
+@media(prefers-color-scheme:dark) { .project-tile p { color: #b5c1c9; } .project-tile { border-color: #4f616b; } .project-tile .research-meta { color: #9cc5d4; } }
 </style>
-<div class="projects-page">
-
 ## Research Projects
 
 <div class="project-catalog">
@@ -104,4 +101,3 @@ author_profile: true
 
 </div>
 
-</div>
