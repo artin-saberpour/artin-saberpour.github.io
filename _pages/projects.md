@@ -82,6 +82,24 @@ author_profile: true
 
 <div class="project-catalog">
 
+  <a class="project-tile" href="{{ '/projects/object-part-grounding/' | relative_url }}">
+    <img src="{{ '/images/object-grounding-hammer.jpg' | relative_url }}" alt="Three simulated views of a hammer with a segmented head" style="object-position:left center">
+    <div class="tile-body">
+      <h3>Object-Part Grounding for Robotics</h3>
+      <p>Language-guided segmentation and geometric localization of functional object parts.</p>
+      <div class="research-meta">SAM · Grounding DINO · CLIP · Unity</div>
+    </div>
+  </a>
+
+  <a class="project-tile" href="{{ '/projects/event-triggered-vision/' | relative_url }}">
+    <img src="{{ '/images/event-triggered-vision.svg' | relative_url }}" alt="Diagram of scene change detection and conditional vision-language inference" style="object-fit:contain!important;background:#173541">
+    <div class="tile-body">
+      <h3>Event-Triggered Visual Reasoning</h3>
+      <p>Exploring when changes in a scene should trigger vision-language inference.</p>
+      <div class="research-meta">CLIP · MediaPipe · LLaVA</div>
+    </div>
+  </a>
+
   <a class="project-tile" href="{{ '/projects/mini-ctorch/' | relative_url }}">
     <img src="https://raw.githubusercontent.com/artin-saberpour/Mini_CTorch/main/py/training_progress.gif" alt="Mini_CTorch thumbnail">
     <div class="tile-body">
@@ -110,4 +128,5 @@ author_profile: true
     </div>
   </a>
 </div>
+
 

@@ -13,7 +13,7 @@ redirect_from:
 
 Research Interests
 ======
-I study how robotic systems can behave in ways that feel intuitive and natural to humans, with a focus on understanding the behavioral and contextual cues that shape human perception of robot motion, and using these insights to design more seamless and ergonomic interactions.
+My work spans applied machine learning, multimodal perception, visual reasoning, and robot interaction. I develop and evaluate AI systems that connect scene understanding with human-centered and embodied behavior.
 
 * Human–Robot Interaction (HRI)
 * Wearable Robotics
@@ -89,6 +89,12 @@ Teaching
 
 Skills
 ======
+* Computer Vision & Multimodal Perception
+  * Object-part localization, segmentation, and visual grounding
+  * Exploratory work with SAM, Grounding DINO, CLIP, OWLv2, and YOLOv8
+  * Image-based orientation estimation with Orient Anything
+  * Vision-language reasoning and event-triggered perception prototypes
+
 * Embodied AI & Generative Modeling
   * CVAE, diffusion models, transformers
   * Human–robot handover synthesis
@@ -158,3 +164,4 @@ Supervision
   * data analysis, evaluation, and scientific writing
 
 * Supervised graduate seminar and course projects on wearable robotics and generative AI for interactive systems, mentoring student teams through ideation, implementation, and final presentation
+

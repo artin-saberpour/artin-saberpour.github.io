@@ -1,0 +1,52 @@
+---
+layout: single
+permalink: /projects/object-part-grounding/
+title: "Object-Part Grounding for Robotics"
+author_profile: true
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/research-projects.css' | relative_url }}">
+
+<article class="research-showcase">
+  <p class="eyebrow">Engineering prototype · Computer vision · Robotics</p>
+  <p class="lead">Exploring how vision foundation models and spatial geometry can identify the functional parts of an object for robot interaction.</p>
+  <p class="meta">Python · PyTorch · Grounding DINO · SAM · CLIP · OWLv2 · Unity</p>
+
+  <figure>
+    <img src="{{ '/images/object-grounding-hammer.jpg' | relative_url }}" alt="Three simulated views of a hammer with candidate masks highlighting its head" loading="eager">
+    <figcaption>Candidate object-part masks across three simulated views. This qualitative example is part of an exploratory grounding pipeline.</figcaption>
+  </figure>
+
+  <h2>The problem</h2>
+  <p>For a robot handing over an object, recognizing the object is only a first step. A handle, blade, opening, or tool head can carry a different meaning for the interaction. I explored how language-guided vision models can locate such parts and make their visual evidence useful for spatial reasoning.</p>
+
+  <h2>Approach</h2>
+  <p>I prototyped a text-guided segmentation pipeline that combines <strong>Grounding DINO</strong> for candidate detection with <strong>Segment Anything (SAM)</strong> for mask generation. The system accepts descriptions of object parts and produces candidate regions that can be inspected across views.</p>
+  <div class="stages" aria-label="Exploratory part-grounding pipeline">
+    <div class="stage">Part description</div>
+    <div class="stage">Text-guided detection</div>
+    <div class="stage">Candidate masks</div>
+    <div class="stage">Spatial reasoning</div>
+  </div>
+  <p>For simulated handovers, I investigated how masks from orthographic Unity views, together with known object bounds, could be converted into candidate 3D part locations and directions. I also explored vision-language checks for selecting among candidate masks.</p>
+
+  <h2>Comparing perception approaches</h2>
+  <p>Alongside the grounding pipeline, I explored <strong>CLIP</strong> for matching part descriptions to image crops and for sliding-window localization. One experiment used negative text prompts and embedding-space projections to investigate finer distinctions between object regions. I also tested <strong>OWLv2</strong> for text-conditioned object-part detection. These were separate experiments, rather than a single combined model.</p>
+
+  <h2>Related perception experiments</h2>
+  <p>I tested <strong>YOLOv8-seg</strong> on a camera image to detect scene objects and save bounding-box crops. A separate <strong>Orient Anything</strong> prototype explored image-based orientation estimates and a Python-to-Unity communication interface.</p>
+  <figure>
+    <img src="{{ '/images/scene-object-cup.png' | relative_url }}" alt="Cup crop from a scene detection experiment" loading="lazy" style="max-width:280px;">
+    <figcaption>A saved cup crop from the scene-level YOLOv8-seg experiment. The crop uses a detection bounding box.</figcaption>
+  </figure>
+
+  <h2>What this work explores</h2>
+  <ul>
+    <li>Integrating pretrained vision and language models in a perception pipeline.</li>
+    <li>Prompting, visualizing, and inspecting object-part detections and masks.</li>
+    <li>Connecting visual evidence to coordinate systems and geometric representations in Unity.</li>
+    <li>Investigating failure cases when masks or views do not identify the intended part.</li>
+  </ul>
+  <p class="note">These are exploratory prototypes developed during a broader investigation of VLM-guided handovers. The model-assisted approaches shown here are separate from the final method reported in the related paper. The saved examples are qualitative and do not establish a general accuracy measure.</p>
+  <p class="meta"><a href="{{ '/projects/event-triggered-vision/' | relative_url }}">Related project: Event-Triggered Visual Reasoning</a> · <a href="{{ '/projects/' | relative_url }}">All projects</a></p>
+</article>

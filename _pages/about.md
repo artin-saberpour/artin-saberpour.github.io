@@ -22,6 +22,8 @@ I research and engineer **AI systems that connect perception, language, decision
 
 I work across the full pipeline, from dataset design and model architectures to inference engineering, robot control, interactive systems, and quantitative evaluation.
 
+My engineering work also includes [object-part grounding](/projects/object-part-grounding/) with vision foundation models and an [event-triggered vision-language prototype](/projects/event-triggered-vision/) for responsive scene understanding.
+
 ## Research Focus
 
 <div class="home-focus">
@@ -65,3 +67,4 @@ Explore my [Projects](/projects/) and [Publications](/publications/) for researc
 ## About
 
 I am completing my PhD at Saarland University, working at the intersection of applied machine learning, spatial reasoning, robotic interaction, and human-centered systems. My research connects technical AI methods with complete implementations and experimental validation.
+

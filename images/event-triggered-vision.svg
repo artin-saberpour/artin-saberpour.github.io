@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Event-triggered visual reasoning</title>
+  <desc id="desc">A webcam frame is separated into person and background regions, compared using CLIP embeddings, and routed to a vision-language model when the scene changes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#132e3d"/><stop offset="1" stop-color="#203f4a"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#9dc7ce"/></marker>
+  </defs>
+  <rect width="1200" height="620" rx="20" fill="url(#bg)"/>
+  <text x="70" y="93" fill="#b7e2df" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">EVENT-TRIGGERED PERCEPTION</text>
+  <text x="70" y="146" fill="#fff" font-family="Arial,sans-serif" font-size="38" font-weight="700">A visual change routes the next inference</text>
+  <path d="M300 316h28 M560 316h28 M820 316h28" fill="none" stroke="#9dc7ce" stroke-width="4" marker-end="url(#arrow)"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="225" width="230" height="180" rx="17" fill="#254e5d" stroke="#588491" stroke-width="2"/>
+    <text x="94" y="270" fill="#9dd8d3" font-size="19" font-weight="700">01  INPUT</text>
+    <text x="94" y="318" fill="#fff" font-size="27" font-weight="700">Camera</text>
+    <text x="94" y="350" fill="#d3e5e6" font-size="20">Webcam frame</text>
+    <rect x="330" y="225" width="230" height="180" rx="17" fill="#254e5d" stroke="#588491" stroke-width="2"/>
+    <text x="354" y="270" fill="#9dd8d3" font-size="19" font-weight="700">02  REGIONS</text>
+    <text x="354" y="318" fill="#fff" font-size="27" font-weight="700">MediaPipe</text>
+    <text x="354" y="350" fill="#d3e5e6" font-size="20">Person + scene</text>
+    <rect x="590" y="225" width="230" height="180" rx="17" fill="#254e5d" stroke="#588491" stroke-width="2"/>
+    <text x="614" y="270" fill="#9dd8d3" font-size="19" font-weight="700">03  COMPARE</text>
+    <text x="614" y="318" fill="#fff" font-size="27" font-weight="700">CLIP</text>
+    <text x="614" y="350" fill="#d3e5e6" font-size="20">Embedding change</text>
+    <rect x="850" y="225" width="280" height="180" rx="17" fill="#d0eee7"/>
+    <text x="874" y="270" fill="#28635f" font-size="19" font-weight="700">04  REASON</text>
+    <text x="874" y="318" fill="#143a3e" font-size="27" font-weight="700">LLaVA</text>
+    <text x="874" y="350" fill="#285f5d" font-size="20">Conditional inference</text>
+  </g>
+  <text x="70" y="525" fill="#d3e5e6" font-family="Arial,sans-serif" font-size="22">Exploratory prototype · Webcam · Vision-language reasoning</text>
+</svg>

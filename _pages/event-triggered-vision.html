@@ -1,0 +1,36 @@
+---
+layout: single
+permalink: /projects/event-triggered-vision/
+title: "Event-Triggered Visual Reasoning"
+author_profile: true
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/research-projects.css' | relative_url }}">
+
+<article class="research-showcase">
+  <p class="eyebrow">Engineering prototype · Multimodal AI · Perception</p>
+  <p class="lead">A webcam perception prototype that investigates when changes in a scene should trigger vision-language reasoning.</p>
+  <p class="meta">Python · PyTorch · CLIP · MediaPipe · LLaVA · OpenCV</p>
+
+  <figure>
+    <img src="{{ '/images/event-triggered-vision.svg' | relative_url }}" alt="Diagram showing camera input, person and background regions, CLIP change detection, and conditional LLaVA inference" loading="eager">
+    <figcaption>Prototype logic. The diagram illustrates the implemented routing idea, not a measured performance result.</figcaption>
+  </figure>
+
+  <h2>The problem</h2>
+  <p>A visual assistant does not necessarily need to run an expensive vision-language model on every camera frame. I explored an event-triggered approach in which a lighter visual representation monitors changes and routes relevant input to a local vision-language model.</p>
+
+  <h2>Prototype</h2>
+  <ol>
+    <li><strong>Separate scene regions.</strong> A webcam frame is divided into person and background views using MediaPipe segmentation.</li>
+    <li><strong>Measure visual change.</strong> CLIP encodes the full frame and the two region views. Cosine distances are compared with earlier embeddings.</li>
+    <li><strong>Route the input.</strong> When the change threshold is crossed, the prototype selects the full frame, person view, or background view for LLaVA inference.</li>
+  </ol>
+
+  <h2>Engineering focus</h2>
+  <p>The prototype brings together live image capture, human-background segmentation, image embeddings, change-based routing, and local vision-language model inference. Its purpose is to investigate selective processing for interactive perception.</p>
+
+  <h2>Current scope</h2>
+  <p>This is an exploratory implementation. Latency, model-call reduction, and missed changes have not yet been established by a controlled benchmark. A next step is to compare the gate with regular inference on the same recorded scenes while tracking responsiveness and missed events.</p>
+  <p class="meta"><a href="{{ '/projects/object-part-grounding/' | relative_url }}">Related project: Object-Part Grounding for Robotics</a> · <a href="{{ '/projects/' | relative_url }}">All projects</a></p>
+</article>
