@@ -23,7 +23,7 @@ repository               : "artin-saberpour/artin-saberpour.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "artin.jpg"
+  avatar           : "artin1.jpg"
   name             : "Artin Saberpour Abadian"
   pronouns         : # example: "she/her"  
   bio              : "Applied AI and ML researcher | Multimodal intelligence, embodied AI and human-centered systems."
