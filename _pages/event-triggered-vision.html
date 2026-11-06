@@ -13,9 +13,15 @@ author_profile: true
   <p class="meta">Python · PyTorch · CLIP · MediaPipe · LLaVA · OpenCV</p>
   <p class="meta"><a href="https://github.com/artin-saberpour/Event-Triggered-Visual-Reasoning">View code and examples on GitHub</a></p>
 
+  <h2>Live webcam demo</h2>
+  <figure>
+    <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/rildjGtj7tQ" title="Event-Triggered Visual Reasoning: live webcam demo" loading="lazy" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption>MediaPipe separates the person and background, and CLIP detects visual changes. On a trigger, the system can reuse a previous description or ask LLaVA to describe the full frame. <a href="https://youtu.be/rildjGtj7tQ">Watch on YouTube</a> · <a href="https://github.com/artin-saberpour/Event-Triggered-Visual-Reasoning/tree/demo/webcam-task-observations-20261106#live-task-change-demo">Live demo code</a></figcaption>
+  </figure>
+
   <figure>
     <img src="{{ '/images/event-triggered-vision.svg' | relative_url }}" alt="Diagram showing camera input, person and background regions, CLIP change detection, and conditional LLaVA inference" loading="eager">
-    <figcaption>Prototype logic. The diagram illustrates the implemented routing idea, not a measured performance result.</figcaption>
+    <figcaption>Original region-routing prototype. In the live demo above, LLaVA receives the full frame when no cached description matches.</figcaption>
   </figure>
 
   <h2>The problem</h2>
@@ -25,7 +31,7 @@ author_profile: true
   <ol>
     <li><strong>Separate scene regions.</strong> A webcam frame is divided into person and background views using MediaPipe segmentation.</li>
     <li><strong>Measure visual change.</strong> CLIP encodes the full frame and the two region views. Cosine distances are compared with earlier embeddings.</li>
-    <li><strong>Route the input.</strong> When the change threshold is crossed, the prototype selects the full frame, person view, or background view for LLaVA inference.</li>
+    <li><strong>Resolve a change.</strong> In the live demo, a trigger compares the full-frame CLIP embedding with previous description embeddings. A match can be reused; otherwise, LLaVA describes the full frame. The original command-line prototype can instead route the selected region to LLaVA.</li>
   </ol>
 
   <h2>Engineering focus</h2>
