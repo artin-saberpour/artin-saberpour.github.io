@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Live webcam event-triggered reasoning pipeline</title>
+  <desc id="desc">A webcam frame is segmented into person and background regions. CLIP compares their embeddings to references. When a region changes, a CLIP image-to-text memory match either reuses a description or LLaVA describes the full frame and eligible descriptions can be stored for the current session. The first frame is described by LLaVA.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#74817f"/></marker>
+  </defs>
+  <rect width="1200" height="720" fill="#f2f1ec"/>
+  <g font-family="Arial, sans-serif">
+    <text x="46" y="53" fill="#253331" font-size="28" font-weight="700">From visual change to a context description</text>
+    <line x1="46" y1="75" x2="1154" y2="75" stroke="#455451" stroke-width="2"/>
+
+    <g fill="#fcfbf7" stroke="#aebbb5" stroke-width="1.5">
+      <rect x="46" y="110" width="250" height="130"/>
+      <rect x="340" y="110" width="298" height="130"/>
+      <rect x="682" y="110" width="472" height="130"/>
+      <rect x="340" y="333" width="814" height="98"/>
+      <rect x="340" y="514" width="340" height="98"/>
+      <rect x="724" y="514" width="430" height="98"/>
+    </g>
+    <g fill="none" stroke="#74817f" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M296 175 H340"/>
+      <path d="M638 175 H682"/>
+      <path d="M918 240 V333"/>
+      <path d="M510 431 V514"/>
+      <path d="M940 431 V514"/>
+      <path d="M1154 563 H1178 V382 H1154"/>
+    </g>
+    <g fill="#325f80" font-size="16" font-weight="700" letter-spacing="1">
+      <text x="68" y="143">01 / INPUT</text>
+      <text x="362" y="143">02 / REGIONS</text>
+      <text x="704" y="143">03 / MONITOR</text>
+      <text x="362" y="366">04 / MEMORY CHECK</text>
+    </g>
+    <g fill="#253331">
+      <text x="68" y="180" font-size="23" font-weight="700">Webcam frame</text>
+      <text x="68" y="211" font-size="17">Full image</text>
+      <text x="362" y="180" font-size="23" font-weight="700">MediaPipe</text>
+      <text x="362" y="211" font-size="17">Person + background</text>
+      <text x="704" y="180" font-size="23" font-weight="700">CLIP change gate</text>
+      <text x="704" y="211" font-size="17">Region embeddings compared to references</text>
+      <text x="362" y="404" font-size="21" font-weight="700">CLIP compares the full image with stored descriptions</text>
+      <text x="362" y="550" font-size="22" font-weight="700">Reuse a description</text>
+      <text x="362" y="580" font-size="17">From the current session</text>
+      <text x="746" y="550" font-size="22" font-weight="700">LLaVA describes the full frame</text>
+      <text x="746" y="580" font-size="17">Eligible descriptions can be stored</text>
+    </g>
+    <g font-size="16" font-weight="700">
+      <text x="940" y="276" fill="#a05239">CHANGE DETECTED</text>
+      <text x="387" y="480" fill="#325f80">MATCH</text>
+      <text x="969" y="480" fill="#a05239">NO MATCH</text>
+    </g>
+    <g fill="#687674" font-size="17">
+      <text x="940" y="302">Otherwise, keep monitoring</text>
+      <text x="46" y="669">The first frame is described by LLaVA; memory is reset between runs.</text>
+    </g>
+    <line x1="46" y1="635" x2="1154" y2="635" stroke="#c7d0cb" stroke-width="1.5"/>
+  </g>
+</svg>

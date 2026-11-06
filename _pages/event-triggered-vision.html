@@ -9,35 +9,38 @@ author_profile: true
 
 <article class="research-showcase">
   <p class="eyebrow">Engineering prototype · Multimodal AI · Perception</p>
-  <p class="lead">A webcam perception prototype that investigates when changes in a scene should trigger vision-language reasoning.</p>
-  <p class="meta">Python · PyTorch · CLIP · MediaPipe · LLaVA · OpenCV</p>
-  <p class="meta"><a href="https://github.com/artin-saberpour/Event-Triggered-Visual-Reasoning">View code and examples on GitHub</a></p>
+  <p class="lead">A live webcam prototype that uses visual change to decide when to update an open-ended description of the scene.</p>
+  <p class="meta">Python · PyTorch · MediaPipe · CLIP ViT-B/32 · LLaVA 1.5 7B · OpenCV</p>
+  <p class="meta"><a href="https://github.com/artin-saberpour/Event-Triggered-Visual-Reasoning/tree/demo/webcam-task-observations-20261106#live-task-change-demo">Live demo code and setup</a> · <a href="https://github.com/artin-saberpour/Event-Triggered-Visual-Reasoning">Project repository</a></p>
 
   <h2>Live webcam demo</h2>
   <figure>
     <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/rildjGtj7tQ" title="Event-Triggered Visual Reasoning: live webcam demo" loading="lazy" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <figcaption>MediaPipe separates the person and background, and CLIP detects visual changes. On a trigger, the system can reuse a previous description or ask LLaVA to describe the full frame. <a href="https://youtu.be/rildjGtj7tQ">Watch on YouTube</a> · <a href="https://github.com/artin-saberpour/Event-Triggered-Visual-Reasoning/tree/demo/webcam-task-observations-20261106#live-task-change-demo">Live demo code</a></figcaption>
+    <figcaption>The interface shows the live camera, person and background views, CLIP change scores, and the source of each description. <a href="https://youtu.be/rildjGtj7tQ">Watch on YouTube</a></figcaption>
   </figure>
+
+  <h2>From visual change to a description</h2>
+  <p>The goal is to update context when a scene changes without asking a vision-language model to describe every sampled frame. In its default hybrid mode, the demo combines a visual change gate with a small session memory of previous descriptions.</p>
 
   <figure>
-    <img src="{{ '/images/event-triggered-vision.svg' | relative_url }}" alt="Diagram showing camera input, person and background regions, CLIP change detection, and conditional LLaVA inference" loading="eager">
-    <figcaption>Original region-routing prototype. In the live demo above, LLaVA receives the full frame when no cached description matches.</figcaption>
+    <img src="{{ '/images/event-triggered-live-pipeline.svg' | relative_url }}" alt="A camera frame is segmented into person and background, a CLIP gate detects changes, and a memory match either reuses a description or sends the full frame to LLaVA." loading="lazy">
+    <figcaption>The live demo first describes the initial frame, then checks session memory when a visual change triggers a new observation.</figcaption>
   </figure>
 
-  <h2>The problem</h2>
-  <p>A visual assistant does not necessarily need to run an expensive vision-language model on every camera frame. I explored an event-triggered approach in which a lighter visual representation monitors changes and routes relevant input to a local vision-language model.</p>
-
-  <h2>Prototype</h2>
+  <h2>How it works</h2>
   <ol>
-    <li><strong>Separate scene regions.</strong> A webcam frame is divided into person and background views using MediaPipe segmentation.</li>
-    <li><strong>Measure visual change.</strong> CLIP encodes the full frame and the two region views. Cosine distances are compared with earlier embeddings.</li>
-    <li><strong>Resolve a change.</strong> In the live demo, a trigger compares the full-frame CLIP embedding with previous description embeddings. A match can be reused; otherwise, LLaVA describes the full frame. The original command-line prototype can instead route the selected region to LLaVA.</li>
+    <li><strong>Separate the scene.</strong> MediaPipe creates person and background views from each sampled webcam frame. CLIP encodes those views and the full frame.</li>
+    <li><strong>Detect change.</strong> The person and background embeddings are each compared with their stored reference. When either cosine distance exceeds the gate threshold, the affected reference is refreshed and the demo emits a trigger.</li>
+    <li><strong>Check previous descriptions.</strong> The first frame is described by LLaVA. For later triggers, CLIP compares the current full-frame embedding with embeddings of descriptions stored during this run. If a match passes the similarity and margin thresholds, the description is reused.</li>
+    <li><strong>Describe a new view.</strong> When there is no suitable match, LLaVA generates an open-ended description from the full frame. Eligible descriptions are added to memory for later comparisons; the memory starts empty on each run.</li>
   </ol>
 
-  <h2>Engineering focus</h2>
-  <p>The prototype brings together live image capture, human-background segmentation, image embeddings, change-based routing, and local vision-language model inference. Its purpose is to investigate selective processing for interactive perception.</p>
+  <p>The default change threshold is 0.10. Reuse requires at least two distinct stored descriptions, a best similarity of at least 0.30, and a margin of at least 0.04 over the next candidate. These are starting values rather than calibrated confidence scores.</p>
 
-  <h2>Current scope</h2>
-  <p>This is an exploratory implementation. Latency, model-call reduction, and missed changes have not yet been established by a controlled benchmark. A next step is to compare the gate with regular inference on the same recorded scenes while tracking responsiveness and missed events.</p>
+  <h2>What the interface shows</h2>
+  <p>The plot displays person and background distances to their respective references at each sample, along with the threshold, trigger points and reference resets. The model panels show the segmentation views, current distances, memory decision, LLaVA calls and description reuses. Camera display and inference run separately; when inference falls behind, newer frames replace queued ones.</p>
+
+  <h2>Scope and next step</h2>
+  <p>Descriptions are inferred from individual images and can miss or confuse visually similar activities. A controlled comparison on recorded sequences is needed to measure response time, missed changes and model-call reduction.</p>
   <p class="meta"><a href="{{ '/projects/object-part-grounding/' | relative_url }}">Related project: Object-Part Grounding for Robotics</a> · <a href="{{ '/projects/' | relative_url }}">All projects</a></p>
 </article>
